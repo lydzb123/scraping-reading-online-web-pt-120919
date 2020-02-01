@@ -7,6 +7,6 @@ doc = Nokogiri::HTML(html)
 
 courses = doc.css(".title-oE5vT4")
 
-puts courses.each do |course|
+courses.each do |course|
   puts course.text.strip
 end
