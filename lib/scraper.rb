@@ -5,7 +5,7 @@ require 'pry'
 html = open("https://flatironschool.com/")
 doc = Nokogiri::HTML(html)
 
-courses = doc.css(".title-oE5vT4")
+courses = doc.css(".title-oE5vT4")[0].name
 
 courses.each do |course|
   puts course.text.strip
