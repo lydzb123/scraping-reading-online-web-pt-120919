@@ -7,4 +7,5 @@ doc = Nokogiri::HTML(html)
 
 courses = doc.css(".title-oE5vT4")
 
+courses.each do |course| 
 binding.pry
